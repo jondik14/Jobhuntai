@@ -1,0 +1,31 @@
+{
+  "name": "job-search-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --strictPort false --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && vercel --prod",
+    "deploy:static": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@types/papaparse": "^5.5.2",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.564.0",
+    "papaparse": "^5.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
+  }
+}
